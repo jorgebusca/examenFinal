@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30/08/2018 13:37:48 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.Usuario" table="usuario" catalog="delibery" optimistic-lock="version">
+        <id name="idUsuario" type="java.lang.Integer">
+            <column name="id_usuario" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="50" />
+        </property>
+        <property name="dni" type="int">
+            <column name="dni" not-null="true" />
+        </property>
+        <property name="domicilio" type="string">
+            <column name="domicilio" length="100" />
+        </property>
+        <property name="nro" type="java.lang.Integer">
+            <column name="Nro" />
+        </property>
+        <property name="piso" type="java.lang.Integer">
+            <column name="piso" />
+        </property>
+        <property name="dto" type="string">
+            <column name="dto" length="5" />
+        </property>
+        <property name="ciudad" type="string">
+            <column name="Ciudad" length="100" />
+        </property>
+        <property name="codArea" type="java.lang.Integer">
+            <column name="cod_area" />
+        </property>
+        <property name="celular" type="java.lang.Integer">
+            <column name="celular" />
+        </property>
+    </class>
+</hibernate-mapping>
